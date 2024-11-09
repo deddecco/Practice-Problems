@@ -20,7 +20,7 @@ public class SumOfSumOfSubsets {
 
           System.arraycopy(subsetsWithoutLast, 0, result, 0, subsetsWithoutLast.length);
 
-          // make a copy of each elemet of the powerset that was missing n, and put n there
+          // make a copy of each elemet of the powerset that was missing n, and put n there in the second copy
           for (int i = 0; i < subsetsWithoutLast.length; i++) {
                int[] newSubset = new int[subsetsWithoutLast[i].length + 1];
                System.arraycopy(subsetsWithoutLast[i], 0, newSubset, 0, subsetsWithoutLast[i].length);
