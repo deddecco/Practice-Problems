@@ -1,5 +1,6 @@
-import java.util.Arrays;
 import java.util.Comparator;
+
+import static java.util.Arrays.*;
 
 public class SumOfSumOfSubsets {
 
@@ -51,10 +52,10 @@ public class SumOfSumOfSubsets {
 
           int[][] result = generatePowerset(set);
 
-          Arrays.sort(result, Comparator.comparingInt(a -> a.length));
+          sort(result, Comparator.comparingInt(a -> a.length));
 
 
-          System.out.println(Arrays.deepToString(result));
+          System.out.println(deepToString(result));
           System.out.println(sumOfSumOfSubsets(result));
      }
 }
